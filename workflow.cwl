@@ -9,6 +9,8 @@ outputs:
 
 steps:  
     kneaddata:
+    scatter: [input]
         run: cwl/TrimGalore.cwl
         in:
         out: []
+    
