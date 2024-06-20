@@ -1,7 +1,17 @@
 FROM ubuntu:20.04
 
 RUN apt-get update
-RUN apt-get install gcc make libbz2-dev zlib1g-dev libncurses5-dev libncursesw5-dev liblzma-dev bzip2 g++ rsync libsqlite3-dev bzip2 openjdk-11-jre -y
+RUN apt-get install gcc make libbz2-dev \
+	zlib1g-dev \
+	libncurses5-dev \
+	libncursesw5-dev \
+	liblzma-dev \
+	bzip2 g++ \
+	rsync \
+	libsqlite3-dev \
+	bzip2 \
+	openjdk-11-jre -y
+	
 RUN apt-get install perl -y
 RUN apt install cutadapt -y
 
